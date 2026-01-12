@@ -24,7 +24,7 @@ html {
 
 /* Header */
 .header {
-    background-color: #2c1810;
+    background-color: #21110cfa;
     color: #fff;
     padding: 20px 0;
     position: sticky;
@@ -366,6 +366,21 @@ html {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
+}
+
+.we-help-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.we-help-image {
+    max-width: 80%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .subtitle {
