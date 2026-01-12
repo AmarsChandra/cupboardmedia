@@ -423,12 +423,13 @@ html {
 
 .we-help-right {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding-left: 70px;
 }
 
 .we-help-image {
-    max-width: 80%;
+    max-width: 95%;
     height: auto;
     width: auto;
     object-fit: contain;
