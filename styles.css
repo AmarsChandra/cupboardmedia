@@ -641,10 +641,55 @@ html {
     margin-bottom: 30px;
 }
 
+.contact-form-wrapper {
+    position: relative;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.contact-form-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(245, 245, 245, 0.7);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.contact-form-wrapper:hover .contact-form-overlay {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.overlay-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c1810;
+    margin-bottom: 10px;
+}
+
+.overlay-subtitle {
+    font-size: 16px;
+    color: #2c1810;
+    line-height: 1.5;
 }
 
 .form-input,
