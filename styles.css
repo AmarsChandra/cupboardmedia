@@ -80,9 +80,36 @@ html {
     background-color: #2c1810;
     padding: 100px 0;
     position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(139, 69, 19, 0.25) 0px,
+        rgba(44, 24, 16, 0.35) 2px,
+        rgba(139, 69, 19, 0.20) 4px,
+        rgba(44, 24, 16, 0.28) 6px,
+        rgba(139, 69, 19, 0.30) 8px,
+        rgba(44, 24, 16, 0.22) 10px,
+        transparent 12px,
+        transparent 20px
+    );
+    mask-image: linear-gradient(to left, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .hero-content {
+    position: relative;
+    z-index: 1;
     text-align: left;
 }
 
@@ -591,14 +618,12 @@ html {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.about-right {
-    margin-left: 60px;
+.about-left {
+    text-align: center;
 }
 
 .section-heading-accent {
@@ -690,6 +715,18 @@ html {
     font-size: 16px;
     color: #2c1810;
     line-height: 1.5;
+}
+
+.instagram-link {
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.instagram-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 .form-input,
