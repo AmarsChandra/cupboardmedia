@@ -120,7 +120,7 @@ html {
 }
 
 .large-text {
-    font-size: 72px;
+    font-size: 60px;
     font-weight: 900;
     color: #fff;
     line-height: 1;
@@ -295,6 +295,32 @@ html {
     margin-bottom: 30px;
 }
 
+.we-help-title-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.we-help-subtitle-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.large-text-small {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+}
+
+.brands-highlight {
+    background-color: #8B4513;
+    padding: 8px;
+    border-radius: 4px;
+}
+
 .large-text-dark {
     font-size: 72px;
     font-weight: 900;
@@ -408,6 +434,12 @@ html {
     object-fit: contain;
     border-radius: 12px;
     border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.we-help-right a:hover .we-help-image {
+    transform: scale(1.05);
 }
 
 .subtitle {
@@ -800,6 +832,16 @@ html {
 .footer-email {
     font-size: 18px;
     color: #8B4513;
+}
+
+.footer-email a {
+    color: #8B4513;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-email a:hover {
+    opacity: 0.7;
 }
 
 .footer-copyright {
